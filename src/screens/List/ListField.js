@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../App.css';
-import NoteElement from './NoteElement';
+import NoteElement from '../../components/NoteElement';
 
 //
 //

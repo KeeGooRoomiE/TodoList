@@ -1,14 +1,13 @@
-import { home_url } from './exports';
+import { home_url } from './consts';
 
 export function sendData(method = "GET", url, body = null) {
-  const config = (body === null) ? {
+  const config = {
     method: method,
     headers: { 'Content-Type': 'application/json;charset=utf-8' },
-  } : {
-      method: method,
-      headers: { 'Content-Type': 'application/json;charset=utf-8' },
-      body: JSON.stringify(body)
-    }
+  }
+  if (body) {
+    config.body = JSON.stringify(body);
+  }
   const token = sessionStorage.getItem("userToken");
 
   return fetch(

@@ -1,6 +1,6 @@
 import React from "react";
 import { observer } from 'mobx-react';
-import NoteElement from "./NoteElement";
+import NoteElement from "../../components/NoteElement";
 
 class NotesHeader extends React.Component {
   render() {

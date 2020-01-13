@@ -63,7 +63,7 @@ class NoteStore {
 //
 //
 
-const a = decorate(NoteStore, {
+const NoteExport = decorate(NoteStore, {
   notesJsonArray: observable,
   isHeaderChanged: observable,
   getNotesArray: action,
@@ -72,4 +72,4 @@ const a = decorate(NoteStore, {
 })
 
 
-export default new a()
+export default new NoteExport()

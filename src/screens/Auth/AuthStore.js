@@ -49,7 +49,7 @@ class AuthStore {
     }
 }
 
-const a = decorate(AuthStore, {
+const AuthExport = decorate(AuthStore, {
     isLoggedIn: observable,
     LogIn: action,
     SignIn: action,
@@ -57,4 +57,4 @@ const a = decorate(AuthStore, {
     getTokenExist: action
 })
 
-export default new a()
+export default new AuthExport()
